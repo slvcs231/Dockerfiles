@@ -1,0 +1,8 @@
+FROM almalinux
+RUN dnf install nginx -y
+RUN useradd reddi
+
+
+USER reddi
+
+CMD [ "sleep","1000" ]
